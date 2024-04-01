@@ -1,0 +1,1906 @@
+<style>
+   body{
+    background-color: #e7b732;
+   }
+</style>
+
+<script>
+    
+    (function(d, link) {
+        link = d.createElement('link');
+        link.rel = "stylesheet";
+        link.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+        d.head.appendChild(link);
+    }(document));
+
+</script>
+<style type="text/css" id="">
+    
+    #ddr-4ae94f2fa3 .ddr-widget .menu ul li {
+        background-color: rgba(34, 25, 77, 0);
+        width: 20%;
+        border: none;
+        border-radius: 0px;
+    }
+
+    #ddr-4ae94f2fa3 .ddr-widget .menu ul li:hover {
+        background-color: undefined;
+        text-decoration-color: #000000;
+        border-color: #000000;
+    }
+
+    #ddr-4ae94f2fa3 .ddr-widget .menu ul li ul li {
+        width: 100%;
+    }
+
+    #ddr-4ae94f2fa3 .ddr-widget .menu ul li a {
+        color: none;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 600;
+        text-decoration: none;
+        text-decoration-thickness: 0px;
+        line-height: 16px;
+    }
+
+    #ddr-4ae94f2fa3 .ddr-widget .menu ul li ul li a {
+        color: none;
+        text-align: center;
+        font-size: 11px;
+        line-height: 16px;
+        text-decoration: none !important;
+    }
+
+    #ddr-4ae94f2fa3 .ddr-widget .menu ul li a:hover {
+        color: null;
+        text-decoration-color: #000000;
+        border-color: #000000;
+        text-decoration: none;
+        text-decoration-thickness: 0px;
+    }
+
+    #ddr-4ae94f2fa3 .ddr-widget__navigation,
+    #ddr-4ae94f2fa3 .ddr-widget__navigation .menu {
+        background-color: rgba(34, 25, 77, 0);
+        min-height: 48px;
+    }
+
+    #ddr-4ae94f2fa3 .burger-menu {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #ddr-4ae94f2fa3 .burger-menu>i {
+        color: none;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper {
+        padding-top: 35px;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: auto;
+        height: 100vh;
+        width: 30%;
+        min-width: 225px;
+        max-width: 400px;
+        background-color: #ffffff;
+        z-index: 99;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .close-button {
+        color: none;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .nav-item {
+        background-color: #ffffff;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .nav-item.hidden {
+        display: none;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .nav-item-text {
+        position: relative;
+        background-color: #ffffff;
+        font-weight: bold;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .nav-item-text a {
+        padding: 10px 15px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: none;
+        text-decoration: none;
+        text-decoration-thickness: 0px;
+        line-height: 16px;
+    }
+
+    #ddr-4ae94f2fa3 .ddr-widget .side-menu-wrapper .nav-item-text:hover {
+        background-color: undefined;
+        text-decoration-color: #000000;
+        border-color: #000000;
+    }
+
+    #ddr-4ae94f2fa3 .ddr-widget .side-menu-wrapper .nav-item-text:hover a {
+        color: null;
+    }
+
+    #ddr-4ae94f2fa3 .ddr-widget .side-menu-wrapper .nav-item-text:hover i {
+        color: null;
+    }
+
+    #ddr-4ae94f2fa3 .ddr-widget .side-menu-wrapper .nav-item-text a:hover {
+        text-decoration-color: #000000;
+        border-color: #000000;
+        text-decoration: none;
+        text-decoration-thickness: 0px;
+    }
+
+    .side-menu-wrapper .nav-item-text a,
+    .sub-item-wrapper .sub-item-text a,
+    .side-menu-wrapper .sub-item-wrapper .sub-sub-item-text a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        line-height: 16px;
+        color: none;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .plus-icon {
+        color: none;
+        cursor: pointer;
+        position: absolute;
+        top: 11px;
+        right: 10px;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .sub-item-wrapper {
+        display: none;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .sub-item.hidden {
+        display: none;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .sub-item-wrapper .sub-item-text {
+        position: relative;
+        padding: 10px;
+        padding-left: 15px;
+        background-color: #ffffff;
+        font-weight: bold;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .sub-item-wrapper .sub-item-text:hover {
+        background-color: undefined;
+        text-decoration-color: #000000;
+        border-color: #000000;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .sub-item-wrapper .sub-item-text:hover a {
+        color: null;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .sub-item-wrapper .sub-item-text:hover i {
+        color: null;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .sub-item-wrapper .sub-item-text a {
+        color: none;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .sub-sub-item-wrapper {
+        display: none;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .sub-item-wrapper .sub-sub-item-text {
+        position: relative;
+        padding: 10px;
+        padding-left: 20px;
+        background-color: #ffffff;
+        color: white;
+        font-weight: bold;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .sub-item-wrapper .sub-sub-item-text.hidden {
+        display: none;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .sub-item-wrapper .sub-sub-item-text:hover {
+        background-color: undefined;
+        text-decoration-color: #000000;
+        border-color: #000000;
+    }
+
+    #ddr-4ae94f2fa3 .side-menu-wrapper .sub-item-wrapper .sub-sub-item-text:hover a {
+        color: null;
+    }
+
+    @media screen and (max-width: 768px) {
+        #ddr-4ae94f2fa3 nav.menu {
+            display: flex;
+            justify-content: center;
+            padding: 0 20px;
+        }
+
+        #ddr-4ae94f2fa3 .burger-menu {
+            display: flex;
+        }
+
+        #ddr-4ae94f2fa3 nav.menu ul {
+            display: none !important;
+        }
+    }
+
+    .ddr-page-widget__navigation {
+        overflow: visible !important;
+        min-height: 45px;
+
+        .ddr-widget {
+            overflow: visible;
+
+            .menu>ul>li {
+                position: relative;
+            }
+        }
+
+        .menu>ul>li {
+            position: relative;
+        }
+
+        .menu li ul {
+            position: absolute !important;
+            width: 100%;
+            z-index: 99;
+            padding-bottom: 0;
+        }
+    }
+
+    .ddr-page-widget__navigation .ddr-widget .menu>ul li a {
+        display: block;
+        padding: 15px;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #ddr-878c7ae412 h1,
+    #ddr-878c7ae412 h2,
+    #ddr-878c7ae412 h3,
+    #ddr-878c7ae412 h4,
+    #ddr-878c7ae412 h5,
+    #ddr-878c7ae412 h6,
+    #ddr-878c7ae412 p,
+    #ddr-878c7ae412 span,
+    #ddr-878c7ae412 a,
+    #ddr-878c7ae412 .ddr-widget,
+    #ddr-878c7ae412 .ddr-widget__form-label,
+    #ddr-878c7ae412 .ddr-widget__form-submit button,
+    #ddr-878c7ae412 .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-18b8150cb4 h1,
+    #ddr-18b8150cb4 h2,
+    #ddr-18b8150cb4 h3,
+    #ddr-18b8150cb4 h4,
+    #ddr-18b8150cb4 h5,
+    #ddr-18b8150cb4 h6,
+    #ddr-18b8150cb4 p,
+    #ddr-18b8150cb4 span,
+    #ddr-18b8150cb4 a,
+    #ddr-18b8150cb4 .ddr-widget,
+    #ddr-18b8150cb4 .ddr-widget__form-label,
+    #ddr-18b8150cb4 .ddr-widget__form-submit button,
+    #ddr-18b8150cb4 .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-ce38a1a87f h1,
+    #ddr-ce38a1a87f h2,
+    #ddr-ce38a1a87f h3,
+    #ddr-ce38a1a87f h4,
+    #ddr-ce38a1a87f h5,
+    #ddr-ce38a1a87f h6,
+    #ddr-ce38a1a87f p,
+    #ddr-ce38a1a87f span,
+    #ddr-ce38a1a87f a,
+    #ddr-ce38a1a87f .ddr-widget,
+    #ddr-ce38a1a87f .ddr-widget__form-label,
+    #ddr-ce38a1a87f .ddr-widget__form-submit button,
+    #ddr-ce38a1a87f .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-3aa9ae10ef h1,
+    #ddr-3aa9ae10ef h2,
+    #ddr-3aa9ae10ef h3,
+    #ddr-3aa9ae10ef h4,
+    #ddr-3aa9ae10ef h5,
+    #ddr-3aa9ae10ef h6,
+    #ddr-3aa9ae10ef p,
+    #ddr-3aa9ae10ef span,
+    #ddr-3aa9ae10ef a,
+    #ddr-3aa9ae10ef .ddr-widget,
+    #ddr-3aa9ae10ef .ddr-widget__form-label,
+    #ddr-3aa9ae10ef .ddr-widget__form-submit button,
+    #ddr-3aa9ae10ef .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-2f3d0bdf6f h1,
+    #ddr-2f3d0bdf6f h2,
+    #ddr-2f3d0bdf6f h3,
+    #ddr-2f3d0bdf6f h4,
+    #ddr-2f3d0bdf6f h5,
+    #ddr-2f3d0bdf6f h6,
+    #ddr-2f3d0bdf6f p,
+    #ddr-2f3d0bdf6f span,
+    #ddr-2f3d0bdf6f a,
+    #ddr-2f3d0bdf6f .ddr-widget,
+    #ddr-2f3d0bdf6f .ddr-widget__form-label,
+    #ddr-2f3d0bdf6f .ddr-widget__form-submit button,
+    #ddr-2f3d0bdf6f .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-92fa315d24 h1,
+    #ddr-92fa315d24 h2,
+    #ddr-92fa315d24 h3,
+    #ddr-92fa315d24 h4,
+    #ddr-92fa315d24 h5,
+    #ddr-92fa315d24 h6,
+    #ddr-92fa315d24 p,
+    #ddr-92fa315d24 span,
+    #ddr-92fa315d24 a,
+    #ddr-92fa315d24 .ddr-widget,
+    #ddr-92fa315d24 .ddr-widget__form-label,
+    #ddr-92fa315d24 .ddr-widget__form-submit button,
+    #ddr-92fa315d24 .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-6a08324366 h1,
+    #ddr-6a08324366 h2,
+    #ddr-6a08324366 h3,
+    #ddr-6a08324366 h4,
+    #ddr-6a08324366 h5,
+    #ddr-6a08324366 h6,
+    #ddr-6a08324366 p,
+    #ddr-6a08324366 span,
+    #ddr-6a08324366 a,
+    #ddr-6a08324366 .ddr-widget,
+    #ddr-6a08324366 .ddr-widget__form-label,
+    #ddr-6a08324366 .ddr-widget__form-submit button,
+    #ddr-6a08324366 .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-84a84bc27b h1,
+    #ddr-84a84bc27b h2,
+    #ddr-84a84bc27b h3,
+    #ddr-84a84bc27b h4,
+    #ddr-84a84bc27b h5,
+    #ddr-84a84bc27b h6,
+    #ddr-84a84bc27b p,
+    #ddr-84a84bc27b span,
+    #ddr-84a84bc27b a,
+    #ddr-84a84bc27b .ddr-widget,
+    #ddr-84a84bc27b .ddr-widget__form-label,
+    #ddr-84a84bc27b .ddr-widget__form-submit button,
+    #ddr-84a84bc27b .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-934f4b7fec h1,
+    #ddr-934f4b7fec h2,
+    #ddr-934f4b7fec h3,
+    #ddr-934f4b7fec h4,
+    #ddr-934f4b7fec h5,
+    #ddr-934f4b7fec h6,
+    #ddr-934f4b7fec p,
+    #ddr-934f4b7fec span,
+    #ddr-934f4b7fec a,
+    #ddr-934f4b7fec .ddr-widget,
+    #ddr-934f4b7fec .ddr-widget__form-label,
+    #ddr-934f4b7fec .ddr-widget__form-submit button,
+    #ddr-934f4b7fec .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-d0cce37995 h1,
+    #ddr-d0cce37995 h2,
+    #ddr-d0cce37995 h3,
+    #ddr-d0cce37995 h4,
+    #ddr-d0cce37995 h5,
+    #ddr-d0cce37995 h6,
+    #ddr-d0cce37995 p,
+    #ddr-d0cce37995 span,
+    #ddr-d0cce37995 a,
+    #ddr-d0cce37995 .ddr-widget,
+    #ddr-d0cce37995 .ddr-widget__form-label,
+    #ddr-d0cce37995 .ddr-widget__form-submit button,
+    #ddr-d0cce37995 .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-d9d8fcb61c h1,
+    #ddr-d9d8fcb61c h2,
+    #ddr-d9d8fcb61c h3,
+    #ddr-d9d8fcb61c h4,
+    #ddr-d9d8fcb61c h5,
+    #ddr-d9d8fcb61c h6,
+    #ddr-d9d8fcb61c p,
+    #ddr-d9d8fcb61c span,
+    #ddr-d9d8fcb61c a,
+    #ddr-d9d8fcb61c .ddr-widget,
+    #ddr-d9d8fcb61c .ddr-widget__form-label,
+    #ddr-d9d8fcb61c .ddr-widget__form-submit button,
+    #ddr-d9d8fcb61c .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-178e0b34e9 h1,
+    #ddr-178e0b34e9 h2,
+    #ddr-178e0b34e9 h3,
+    #ddr-178e0b34e9 h4,
+    #ddr-178e0b34e9 h5,
+    #ddr-178e0b34e9 h6,
+    #ddr-178e0b34e9 p,
+    #ddr-178e0b34e9 span,
+    #ddr-178e0b34e9 a,
+    #ddr-178e0b34e9 .ddr-widget,
+    #ddr-178e0b34e9 .ddr-widget__form-label,
+    #ddr-178e0b34e9 .ddr-widget__form-submit button,
+    #ddr-178e0b34e9 .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-e41720f5dd h1,
+    #ddr-e41720f5dd h2,
+    #ddr-e41720f5dd h3,
+    #ddr-e41720f5dd h4,
+    #ddr-e41720f5dd h5,
+    #ddr-e41720f5dd h6,
+    #ddr-e41720f5dd p,
+    #ddr-e41720f5dd span,
+    #ddr-e41720f5dd a,
+    #ddr-e41720f5dd .ddr-widget,
+    #ddr-e41720f5dd .ddr-widget__form-label,
+    #ddr-e41720f5dd .ddr-widget__form-submit button,
+    #ddr-e41720f5dd .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-71698362e5 h1,
+    #ddr-71698362e5 h2,
+    #ddr-71698362e5 h3,
+    #ddr-71698362e5 h4,
+    #ddr-71698362e5 h5,
+    #ddr-71698362e5 h6,
+    #ddr-71698362e5 p,
+    #ddr-71698362e5 span,
+    #ddr-71698362e5 a,
+    #ddr-71698362e5 .ddr-widget,
+    #ddr-71698362e5 .ddr-widget__form-label,
+    #ddr-71698362e5 .ddr-widget__form-submit button,
+    #ddr-71698362e5 .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-23abc75539 h1,
+    #ddr-23abc75539 h2,
+    #ddr-23abc75539 h3,
+    #ddr-23abc75539 h4,
+    #ddr-23abc75539 h5,
+    #ddr-23abc75539 h6,
+    #ddr-23abc75539 p,
+    #ddr-23abc75539 span,
+    #ddr-23abc75539 a,
+    #ddr-23abc75539 .ddr-widget,
+    #ddr-23abc75539 .ddr-widget__form-label,
+    #ddr-23abc75539 .ddr-widget__form-submit button,
+    #ddr-23abc75539 .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-1cdd4eb062 h1,
+    #ddr-1cdd4eb062 h2,
+    #ddr-1cdd4eb062 h3,
+    #ddr-1cdd4eb062 h4,
+    #ddr-1cdd4eb062 h5,
+    #ddr-1cdd4eb062 h6,
+    #ddr-1cdd4eb062 p,
+    #ddr-1cdd4eb062 span,
+    #ddr-1cdd4eb062 a,
+    #ddr-1cdd4eb062 .ddr-widget,
+    #ddr-1cdd4eb062 .ddr-widget__form-label,
+    #ddr-1cdd4eb062 .ddr-widget__form-submit button,
+    #ddr-1cdd4eb062 .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-49baa66828 h1,
+    #ddr-49baa66828 h2,
+    #ddr-49baa66828 h3,
+    #ddr-49baa66828 h4,
+    #ddr-49baa66828 h5,
+    #ddr-49baa66828 h6,
+    #ddr-49baa66828 p,
+    #ddr-49baa66828 span,
+    #ddr-49baa66828 a,
+    #ddr-49baa66828 .ddr-widget,
+    #ddr-49baa66828 .ddr-widget__form-label,
+    #ddr-49baa66828 .ddr-widget__form-submit button,
+    #ddr-49baa66828 .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    #ddr-7459fdb470 h1,
+    #ddr-7459fdb470 h2,
+    #ddr-7459fdb470 h3,
+    #ddr-7459fdb470 h4,
+    #ddr-7459fdb470 h5,
+    #ddr-7459fdb470 h6,
+    #ddr-7459fdb470 p,
+    #ddr-7459fdb470 span,
+    #ddr-7459fdb470 a,
+    #ddr-7459fdb470 .ddr-widget,
+    #ddr-7459fdb470 .ddr-widget__form-label,
+    #ddr-7459fdb470 .ddr-widget__form-submit button,
+    #ddr-7459fdb470 .ddr-widget__form-label>div {
+        color: undefined;
+    }
+
+    .ddr-page-wrapper * {
+        box-sizing: border-box;
+    }
+
+    .ddr-page-wrapper {
+        font-family: sans-serif;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+
+    .ddr-page-wrapper .ddr-page-wrapper {
+        min-height: auto;
+    }
+
+    .ddr-page-wrapper .ddr-page {
+        position: relative;
+    }
+
+    .ddr-page-wrapper .ddr-page .ddr-page-section-pre-content::after,
+    .ddr-page-wrapper .ddr-page .ddr-page-section-pre-content::before,
+    .ddr-page-wrapper .ddr-page>div::after,
+    .ddr-page-wrapper .ddr-page>div::before {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+    .big-loader-wrapper {
+        align-items: center;
+        background: rgba(211, 210, 210, 0.5);
+        display: flex;
+        height: 150px;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .big-loader-wrapper .big-loader {
+        animation: 1s ease 0s infinite normal none running spin;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-color: rgb(1, 154, 149) rgb(226, 118, 37);
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 3px;
+        display: block;
+        height: 64px;
+        padding-top: 20px;
+        width: 64px;
+    }
+
+    .ddr-page-row,
+    .ddr-page-section-wrapper .ddr-page-section {
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .ddr-page-row {
+        display: flex;
+        width: 100%;
+    }
+
+    .ddr-page-row.ddr-widget-group-row.ddr-page-row__wrap {
+        flex-wrap: wrap;
+    }
+
+    .ddr-page-row.ddr-widget-group-row.ddr-page-row__wrap .ddr-page-column-and-column-suggestion-wrapper {
+        width: 100% !important;
+    }
+
+    .ddr-page-row__wrap {
+        flex-wrap: wrap;
+    }
+
+    .ddr-page-row__wrap .ddr-page-column__wrap {
+        width: 100% !important;
+    }
+
+    .ddr-page-row__wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+
+    .ddr-page-row__wrap-reverse .ddr-page-column__wrap-reverse {
+        width: 100% !important;
+    }
+
+    .ddr-page-column {
+        align-content: flex-start;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    @media screen and (max-width: 320px) {
+        .widget-group.wrap--320>div {
+            flex-direction: column !important;
+        }
+
+        .widget-group.wrap--320>div .ddr-page-column {
+            width: 100% !important;
+        }
+    }
+
+    @media screen and (min-width: 321px) and (max-width: 480px) {
+        .widget-group.wrap--480>div {
+            flex-direction: column !important;
+        }
+
+        .widget-group.wrap--480>div .ddr-page-column {
+            width: 100% !important;
+        }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        .widget-group.wrap--768>div {
+            flex-direction: column !important;
+        }
+
+        .widget-group.wrap--768>div .ddr-page-column {
+            width: 100% !important;
+        }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        .widget-group.wrap--1024>div {
+            flex-direction: column !important;
+        }
+
+        .widget-group.wrap--1024>div .ddr-page-column {
+            width: 100% !important;
+        }
+    }
+
+    @media screen and (min-width: 1025px) and (max-width: 1280px) {
+        .widget-group.wrap--1280>div {
+            flex-direction: column !important;
+        }
+
+        .widget-group.wrap--1280>div .ddr-page-column {
+            width: 100% !important;
+        }
+    }
+
+    @media only screen and (min-width: 1281px) {
+        .widget-group.wrap--max>div {
+            flex-direction: column !important;
+        }
+
+        .widget-group.wrap--max>div .ddr-page-column {
+            width: 100% !important;
+        }
+    }
+
+    .ddr-page-widget {
+        position: relative;
+        width: 100%;
+    }
+
+    .ddr-page-widget.ddr-page-widget__generic-collection-slider {
+        overflow: visible !important;
+    }
+
+    .dashed-border {
+        outline: rgb(135, 135, 135) dashed 1px;
+    }
+
+    .headline-edit-wrapper {
+        cursor: text;
+    }
+
+    .separator {
+        margin: 33px 0px;
+        position: relative;
+        width: 100%;
+    }
+
+    .separatorIcon {
+        height: 45px;
+        left: 50%;
+        margin-left: -18px;
+        padding: 10px;
+        position: absolute;
+        top: 16px;
+    }
+
+    .ddr-page-widget__navigation {
+        overflow: visible !important;
+    }
+
+    .ddr-page-widget__navigation .ddr-widget {
+        overflow: visible;
+    }
+
+    .ddr-page-widget__navigation .ddr-widget .menu>ul>li {
+        position: relative;
+    }
+
+    .ddr-page-widget__navigation .menu>ul>li {
+        margin-bottom: 0px;
+        position: relative;
+    }
+
+    .ddr-page-widget__navigation .menu li ul {
+        padding-bottom: 0px;
+        width: 100%;
+        z-index: 99;
+        position: absolute !important;
+    }
+
+    .section-slider .ddr-page-section-widget-drop-suggestion-wrapper {
+        padding-bottom: 7px;
+    }
+
+    .ddr-page-widget__sections-slider .toolbox-controls {
+        justify-content: flex-start !important;
+    }
+
+    .section-slider-header-options {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        left: 20px;
+        position: absolute;
+        top: 1px;
+        width: calc(100% - 20px);
+    }
+
+    .section-slider-header-options .fa.fa-copy {
+        margin-right: 7px;
+        position: static;
+        transition: all 0.3s ease 0s;
+        z-index: 100;
+    }
+
+    .section-slider-header-options .fa.fa-copy:hover {
+        color: rgb(239, 83, 80);
+    }
+
+    .slide-options-wrapper {
+        border-bottom: 1px solid rgb(226, 118, 37);
+        position: relative;
+    }
+
+    .slide-options-wrapper .rc-collapse-header {
+        align-items: center;
+        display: flex;
+    }
+
+    .slide-options-wrapper .rc-collapse-content-active {
+        background-color: rgb(23, 23, 23);
+        overflow: visible;
+    }
+
+    .slide-options-wrapper .rc-collapse-content-active .custom-color-picker {
+        left: -35px;
+    }
+
+    .slide-options-wrapper .rc-collapse-content-active .section-slider-delete-icon.slide-delete-icon {
+        align-items: center;
+        background: rgb(239, 83, 80);
+        border-radius: 3px;
+        color: rgb(255, 255, 255);
+    }
+
+    .slide-options-wrapper .rc-collapse-content-active .section-slider-delete-icon.slide-delete-icon i {
+        color: rgb(255, 255, 255) !important;
+    }
+
+    .slide-options-wrapper .rc-collapse-content-active .switch-wrapper .switch {
+        margin-left: -10px;
+    }
+
+    .slide-options-wrapper:last-child {
+        margin-bottom: 24px;
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__sub-tool--drag,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__sub-tool--duplicate,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--drag,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--duplicate,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--move,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--settings {
+        background-color: rgb(226, 118, 37);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--delete {
+        background-color: rgb(72, 72, 72);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool.ddr-widget-toolbox__tool--delete:hover {
+        background-color: rgb(58, 65, 74);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool:hover {
+        background-color: rgb(239, 56, 27);
+    }
+
+    .ddr-page-widget-overlay-wrapper:hover .ddr-widget-toolbox--section-slider {
+        border: 2px solid rgb(226, 118, 37) !important;
+    }
+
+    .ddr-widget-toolbox--active.ddr-widget-toolbox--section-slider {
+        border: 2px solid rgb(226, 118, 37);
+    }
+
+    .uploadcare--widget__button {
+        border-radius: 3px;
+        border-style: solid;
+        height: auto;
+        margin-left: 7px;
+        min-width: 0px;
+        padding: 0.4em 1em;
+        width: auto;
+    }
+
+    .ddr-widget {
+        background-color: initial;
+        background-image: none;
+        inset: auto;
+        height: auto;
+        margin: 0px;
+        max-height: none;
+        max-width: none;
+        min-height: 0px;
+        min-width: 0px;
+        padding: 0px;
+        width: auto;
+    }
+
+    .ddr-widget__video {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .ddr-widget__video iframe {
+        display: block;
+        margin: 0px auto;
+        max-width: 100%;
+    }
+
+    .ddr-widget__image {
+        display: flex;
+        height: auto;
+        margin: auto;
+        max-width: 100%;
+        position: relative;
+    }
+
+    .ddr-widget__image a,
+    .ddr-widget__image img {
+        display: block;
+        max-height: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .ddr-widget__image a,
+    .ddr-widget__image a:active,
+    .ddr-widget__image a:focus,
+    .ddr-widget__image a:hover,
+    .ddr-widget__image a:link,
+    .ddr-widget__image a:visited {
+        border: none;
+        box-shadow: none;
+        color: inherit;
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+
+    .ddr-widget__headline {
+        position: relative;
+        word-break: break-word;
+    }
+
+    .ddr-widget__icon {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+    }
+
+    .ddr-widget__icon>div {
+        display: inline-block;
+    }
+
+    .ddr-widget__icon a,
+    .ddr-widget__icon i {
+        font: initial;
+        overflow: hidden;
+    }
+
+    .ddr-widget__icon i {
+        display: block;
+    }
+
+    .ddr-widget__icon a,
+    .ddr-widget__icon a:active,
+    .ddr-widget__icon a:focus,
+    .ddr-widget__icon a:hover,
+    .ddr-widget__icon a:link,
+    .ddr-widget__icon a:visited {
+        border: none;
+        box-shadow: none;
+        box-sizing: border-box;
+        color: inherit;
+        display: inline-block;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+
+    .ddr-widget__navigation .menu {
+        font-family: inherit;
+    }
+
+    .ddr-widget__navigation .menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .ddr-widget__navigation .menu ul li>ul {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100%;
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .ddr-widget__navigation .menu ul li>ul li {
+        position: relative;
+        width: 100%;
+    }
+
+    @media (min-width: 40em) {
+        .ddr-widget__navigation .menu ul li>ul li>ul {
+            top: 0px;
+            position: absolute !important;
+        }
+    }
+
+    .ddr-widget__navigation .menu ul li:hover>ul {
+        left: 0px;
+        position: relative;
+        visibility: visible;
+    }
+
+    .ddr-widget__navigation .menu .sub-menu li>a {
+        color: inherit;
+    }
+
+    .ddr-widget__navigation .menu .sub-menu>a::after {
+        content: "+";
+        padding-left: 5px;
+    }
+
+    .ddr-widget__navigation .menu>ul li a {
+        cursor: pointer;
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    .ddr-widget__gallery img[src=""] {
+        display: none;
+    }
+
+    @media (min-width: 1281px) {
+        .ddr-page-row__wrap--max {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--max .ddr-page-column__wrap--max {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--max {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--max .ddr-page-column__wrap-reverse--max {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--max,
+        .ddr-page-widget__hide--max {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1280px) and (min-width: 1025px) {
+        .ddr-page-row__wrap--1280 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--1280 .ddr-page-column__wrap--1280 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--1280 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--1280 .ddr-page-column__wrap-reverse--1280 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--1280,
+        .ddr-page-widget__hide--1280 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1024px) and (min-width: 769px) {
+        .ddr-page-row__wrap--1024 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--1024 .ddr-page-column__wrap--1024 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--1024 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--1024 .ddr-page-column__wrap-reverse--1024 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--1024,
+        .ddr-page-widget__hide--1024 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) and (min-width: 481px) {
+        .ddr-page-row__wrap--768 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--768 .ddr-page-column__wrap--768 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--768 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--768 .ddr-page-column__wrap-reverse--768 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--768,
+        .ddr-page-widget__hide--768 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 480px) and (min-width: 321px) {
+        .ddr-page-row__wrap--480 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--480 .ddr-page-column__wrap--480 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--480 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--480 .ddr-page-column__wrap-reverse--480 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--480,
+        .ddr-page-widget__hide--480 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 320px) and (min-width: 0px) {
+        .ddr-page-row__wrap--320 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--320 .ddr-page-column__wrap--320 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--320 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--320 .ddr-page-column__wrap-reverse--320 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--320,
+        .ddr-page-widget__hide--320 {
+            display: none;
+        }
+    }
+
+   
+</style>
+<style type="text/css" id="project-styles">
+    <!--
+    .ddr-widget .ddr-widget__button>a>button,
+    .ddr-widget .ddr-widget__form-text-input .uploadcare-button,
+    .ddr-widget .uploadcare--widget__button,
+    .ddr-widget .ddr-widget__form-submit button {
+        overflow: hidden;
+        cursor: pointer;
+        background-color: #008fa2;
+        box-sizing: border-box;
+        word-break: break-word;
+        transition: all .5s ease;
+        border: none;
+        border-radius: 3px;
+    }
+
+    .ddr-widget .ddr-widget__form-text-input .uploadcare-button {
+        color: white;
+    }
+
+    .editor-wrapper .ddr-page-wrapper .ddr-widget .ddr-widget__rich-text .mce-content-body {
+        line-height: unset;
+    }
+
+    .ddr-widget .ddr-widget__button>a>button,
+    .ddr-widget .ddr-widget__form-text-input .uploadcare-button,
+    .ddr-widget .ddr-widget__form-submit button {
+        display: block;
+    }
+
+    .ddr-widget .ddr-widget__button>a>button span {
+        font-size: 18px;
+    }
+
+    .ddr-widget .ddr-widget__countdown-widget {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .ddr-widget .ddr-widget__countdown-widget .countdown-label {
+        font-size: 20px;
+    }
+
+    .generic-collection__item-DefaultStyle,
+    .generic-collection__item-Style1,
+    .generic-collection__item-Style2 {
+        font-size: 14px;
+        color: #107e8e;
+        font-weight: 700;
+    }
+
+    .generic-collection__description {
+        color: #343a40;
+    }
+
+    
+</style>
+<script class="dd-uploadcare-script">
+    <!--
+    if (!ddUploadCareScript) {
+        var ddUploadCareScript = document.currentScript;
+
+        (function(src, cb) {
+            var s = document.createElement('script');
+            s.setAttribute('src', src);
+            s.onload = cb;
+            (document.head || document.body).appendChild(s);
+        })('https://ucarecdn.com/libs/blinkloader/3.x/blinkloader.min.js', function() {
+            window.Blinkloader.optimize({
+                pubkey: "7e7cb2191e43d9e6ba19",
+                fadeIn: true
+            });
+        });
+    }
+
+    //
+    -->
+</script>
+<script type="text/javascript">
+    <!--
+    (function() {
+        var head = document.getElementsByTagName('head').item(0),
+            url = 'https://app.dragdropr.com/components/dependency-manager.js?version=1.0.9';
+
+        for (var i = 0; i < head.children.length; i++) {
+            if (head.children.item(i).tagName === 'SCRIPT' && head.children.item(i).src.indexOf(url) !== -1) {
+                return;
+            }
+        }
+
+        var node = document.createElement('script');
+        node.async = 1;
+        node.src = url;
+        head.insertBefore(node, null);
+    })();
+
+    //
+    -->
+</script>
+<div class="ddr-page-wrapper" data-ddr-page-id="0b84703a-e1c1-11ee-abbb-0242ac140009">
+    <div class="ddr-page">
+        <div id="ddr-878c7ae412" class="ddr-page-section-wrapper ddr-page-section-wrapper-0">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-0 " style="max-width: 1200px; margin: auto;">
+                <div class="ddr-page-section ddr-page-section-0" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320" id="ddr-65edd253a7">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 " id="ddr-43aeb0687f" style="align-content: center; width: 33.3333%;">
+                            <div id="ddr-0c95c10c13" class="ddr-page-widget ddr-page-widget__image ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <div class="ddr-widget__image" style="justify-content: flex-start; margin: 20px 30px; overflow: hidden;"><a target="_self" style="width: 44px; height: auto;"><img data-blink-src="data:image/png;base64,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" style="height: auto; width: 44px;"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 " id="ddr-15a2986448" style="align-content: center; width: 33.3333%;">
+                            <div id="ddr-4ae94f2fa3" class="ddr-page-widget ddr-page-widget__navigation ddr-page-widget-0 ">
+                                <div class="ddr-widget__navigation ddr-widget " style="margin: 0px; padding: 0px;">
+                                    <nav class="menu">
+                                        <div class="burger-menu"><i class="fa fa-bars"></i></div>
+                                        <div class="side-menu-wrapper">
+                                            <div class="close-button"><i class="fa fa-times"></i></div>
+                                            <div>
+                                                <div class="nav-item">
+                                                    <div class="nav-item-text"><a href="#">ABOUT</a></div>
+                                                    <div class="sub-item-wrapper"></div>
+                                                </div>
+                                                <div class="nav-item">
+                                                    <div class="nav-item-text"><a href="#">GALLERY</a></div>
+                                                    <div class="sub-item-wrapper"></div>
+                                                </div>
+                                                <div class="nav-item">
+                                                    <div class="nav-item-text"><a href="#">PRICING</a></div>
+                                                    <div class="sub-item-wrapper"></div>
+                                                </div>
+                                                <div class="nav-item">
+                                                    <div class="nav-item-text"><a href="#">FAQ</a></div>
+                                                    <div class="sub-item-wrapper"></div>
+                                                </div>
+                                                <div class="nav-item">
+                                                    <div class="nav-item-text"><a href="#">CONTACT</a></div>
+                                                    <div class="sub-item-wrapper"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li class="sc-dsHJmm rxTkf"><a href="#" target="" class="sc-cZFQFd bFmvdy"> ABOUT</a></li>
+                                            <li class="sc-dsHJmm rxTkf"><a href="#" target="" class="sc-cZFQFd bFmvdy"> GALLERY</a></li>
+                                            <li class="sc-dsHJmm rxTkf"><a href="#" target="" class="sc-cZFQFd bFmvdy"> PRICING</a></li>
+                                            <li class="sc-dsHJmm rxTkf"><a href="#" target="" class="sc-cZFQFd bFmvdy"> FAQ</a></li>
+                                            <li class="sc-dsHJmm rxTkf"><a href="#" target="" class="sc-cZFQFd bFmvdy"> CONTACT</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-2 ddr-page-column__wrap--320 " id="ddr-b4b0efec66" style="align-content: center; width: 33.3333%;">
+                            <div id="ddr-e4fd77d40f" class=" ddr-widget widget-group wrap--320 wrap--480 wrap--768" style="width: 100%;">
+                                <div style="display: flex; padding-left: 0px; flex-direction: row; list-style-position: inside; height: max-content;">
+                                    <div class="ddr-page-column ddr-page-column-0 undefined " id="ddr-902fb28806" style="align-content: center; width: 100%;">
+                                        <div id="ddr-2973396fe2" class="ddr-page-widget ddr-page-widget__link-group ddr-page-widget-0 ">
+                                            <ul class="ddr-widget" id="ddr-2973396fe2" style="margin: 0px 30px; padding-bottom: 15px; padding-top: 15px; display: flex; flex-direction: row; list-style-position: inside; list-style-type: none; justify-content: flex-end;">
+                                                <li style="margin: 0px; padding-left: 10px; background-color: inherit;"><a target="_self" href="" style="text-decoration: none; font-style: normal; font-weight: bold; font-size: 11px;">
+                                                        <div class="link-icon" style="display: inline-block;"><i class="fa fa-search" style="margin: 0px 5px;"></i></div>
+                                                    </a></li>
+                                                <li style="margin: 0px; padding-left: 10px; background-color: inherit;"><a target="_self" href="#" style="text-decoration: none; font-style: normal; font-weight: bold; font-size: 11px;">SIGN UP</a></li>
+                                                <li style="margin: 0px; padding-left: 10px; background-color: inherit;"><a target="_self" href="" style="text-decoration: none; font-style: normal; font-weight: bold; font-size: 11px;">SIGN IN</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-18b8150cb4" class="ddr-page-section-wrapper ddr-page-section-wrapper-1">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-1 ">
+                <div class="ddr-page-section ddr-page-section-1" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-0bb34292b9">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-d4231c50cc" style="width: 100%;">
+                            <div id="ddr-5618ae45f6" class="ddr-page-widget ddr-page-widget__icon ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <div class="ddr-widget__icon " style="justify-content: center;"><a target="_self" style="margin: 15px;"><i class="fa fa-video-camera" style="font-size: 40px; color: rgb(17, 212, 130); font-family: FontAwesome;"></i></a></div>
+                                </div>
+                            </div>
+                            <div id="ddr-da9b0c9115" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-1 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; text-align: center; color: rgb(218, 6, 112);">Let's Start<div>(Visual Studio)</div>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-1 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-7f381536cf">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-a205e01c61" style="width: 100%;">
+                            <div id="ddr-e1850216e9" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; color: rgb(10, 140, 218);">Video Introduction in VB</h1>
+                                </div>
+                            </div>
+                            <div id="ddr-ea9876f8ff" class="ddr-page-widget ddr-page-widget__video ddr-page-widget-1 ">
+                                <div class="ddr-widget ">
+                                    <div class="ddr-widget__video" style="margin-left: 25px; margin-right: 31px; position: relative; left: 50%; transform: translateX(-50%);">
+                                        <div class="" style="padding-bottom: 56.25%; position: relative; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube.com/embed/Y8c1IHZs5qc?list=PLTd6ceoshpremSFQxYM4L0p4Q6hR-4e4J&amp;t=456?" frameborder="0" allow="autoplay; loop; control; encrypted-media" allowfullscreen="" style="width: 100%; height: 100%; padding-top: 5px; position: absolute;"></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-ce38a1a87f" class="ddr-page-section-wrapper ddr-page-section-wrapper-2">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-2 ">
+                <div class="ddr-page-section ddr-page-section-2" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-6d089e9714">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-87578a2cdb" style="width: 100%;">
+                            <div id="ddr-d3824122fe" class="ddr-page-widget ddr-page-widget__divider ddr-page-widget-0 ">
+                                <div class="ddr-widget " style="margin: 0px; padding: 0px; height: 70px; display: flex; place-content: space-between;">
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                    <div class="separatorIcon" style="color: rgb(210, 10, 126); top: 16px;"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-3aa9ae10ef" class="ddr-page-section-wrapper ddr-page-section-wrapper-3">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-3 ">
+                <div class="ddr-page-section ddr-page-section-3" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-0e9953c970">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-75d7d0f630" style="width: 92.7083%;">
+                            <div id="ddr-a215e712b1" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; color: rgb(29, 206, 225);">First Course</h1>
+                                </div>
+                            </div>
+                            <div id="ddr-140a2218b0" class="ddr-page-widget ddr-page-widget__video ddr-page-widget-1 ">
+                                <div class="ddr-widget ">
+                                    <div class="ddr-widget__video" style="margin: 0px; position: relative; left: 50%; transform: translateX(-50%);">
+                                        <div class="" style="padding-bottom: 56.25%; position: relative; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube.com/embed/HbU3msDuif8?list=PLTd6ceoshpremSFQxYM4L0p4Q6hR-4e4J&amp;t=11?" frameborder="0" allow="autoplay; loop; control; encrypted-media" allowfullscreen="" style="width: 100%; height: 100%; padding-right: 0px; padding-bottom: 0px; position: absolute;"></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-c1f430ebab" style="width: 7.29167%;">
+                            <div id="ddr-5173ecce08" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; font-weight: 900; color: rgb(29, 206, 225); font-size: 66px; text-align: center;">1</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-2f3d0bdf6f" class="ddr-page-section-wrapper ddr-page-section-wrapper-4">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-4 ">
+                <div class="ddr-page-section ddr-page-section-4" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-206638c96a">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-0c109a0681" style="width: 100%;">
+                            <div id="ddr-df82b4ddb5" class="ddr-page-widget ddr-page-widget__divider ddr-page-widget-0 ">
+                                <div class="ddr-widget " style="margin: 0px; padding: 0px; height: 70px; display: flex; place-content: space-between;">
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                    <div class="separatorIcon" style="color: rgb(48, 13, 222); top: 16px;"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-92fa315d24" class="ddr-page-section-wrapper ddr-page-section-wrapper-5">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-5 ">
+                <div class="ddr-page-section ddr-page-section-5" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-169bfcff00">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-a4f5a4e6d9" style="width: 100%;">
+                            <div id="ddr-32d4c0b0c5" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; color: rgb(29, 206, 225);">Second Course</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-1 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-4d44f0dae9">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-7394214e44" style="width: 92.7083%;">
+                            <div id="ddr-0df19c4637" class="ddr-page-widget ddr-page-widget__video ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <div class="ddr-widget__video" style="margin: 0px; position: relative; left: 50%; transform: translateX(-50%);">
+                                        <div class="" style="padding-bottom: 56.25%; position: relative; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube.com/embed/N7nw2jjnCnQ?list=PLTd6ceoshpremSFQxYM4L0p4Q6hR-4e4J&amp;t=4?" frameborder="0" allow="autoplay; loop; control; encrypted-media" allowfullscreen="" style="width: 100%; height: 100%; padding-right: 0px; padding-bottom: 0px; position: absolute;"></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-ab8d9a9fc3" style="width: 7.29167%;">
+                            <div id="ddr-76318df9f0" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; font-weight: 900; color: rgb(29, 206, 225); font-size: 66px; text-align: center;">2</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-6a08324366" class="ddr-page-section-wrapper ddr-page-section-wrapper-6">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-6 ">
+                <div class="ddr-page-section ddr-page-section-6" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-958e75cba6">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-a6b0465631" style="width: 100%;">
+                            <div id="ddr-6aed4ecaa1" class="ddr-page-widget ddr-page-widget__divider ddr-page-widget-0 ">
+                                <div class="ddr-widget " style="margin: 0px; padding: 0px; height: 70px; display: flex; place-content: space-between;">
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                    <div class="separatorIcon" style="color: rgb(193, 250, 24); top: 16px;"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-1 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-9c7dadefbf">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-c714a63f61" style="width: 100%;">
+                            <div id="ddr-c0207ff47a" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; color: rgb(29, 206, 225);">Third Course</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-2 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-7a9d682e27">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-123b04e102" style="width: 89.5833%;">
+                            <div id="ddr-581a75ab9b" class="ddr-page-widget ddr-page-widget__video ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <div class="ddr-widget__video" style="margin: 0px 0px 0px 75px; position: relative; left: 50%; transform: translateX(-50%);">
+                                        <div class="" style="padding-bottom: 56.25%; position: relative; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube.com/embed/XM3mXeTrSeE?list=PLTd6ceoshpremSFQxYM4L0p4Q6hR-4e4J&amp;t=9?" frameborder="0" allow="autoplay; loop; control; encrypted-media" allowfullscreen="" style="width: 100%; height: 100%; padding-right: 0px; padding-bottom: 0px; position: absolute;"></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-8d1b40ae8d" style="width: 10.4167%;">
+                            <div id="ddr-1a67c7349f" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; font-weight: 900; color: rgb(29, 206, 225); font-size: 66px; text-align: center;">3</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-84a84bc27b" class="ddr-page-section-wrapper ddr-page-section-wrapper-7">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-7 ">
+                <div class="ddr-page-section ddr-page-section-7" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-49e8e649fa">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-12cf9993a4" style="width: 100%;">
+                            <div id="ddr-b29efd081c" class="ddr-page-widget ddr-page-widget__divider ddr-page-widget-0 ">
+                                <div class="ddr-widget " style="margin: 0px; padding: 0px; height: 70px; display: flex; place-content: space-between;">
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                    <div class="separatorIcon" style="color: rgb(93, 174, 233); top: 16px;"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-934f4b7fec" class="ddr-page-section-wrapper ddr-page-section-wrapper-8">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-8 ">
+                <div class="ddr-page-section ddr-page-section-8" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-c53f001db0">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-8c60c488dc" style="width: 100%;">
+                            <div id="ddr-83966ee569" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; color: rgb(29, 206, 225);">Fourth Course</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-1 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-a10981bc5f">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-d35f6e943f" style="width: 87.5%;">
+                            <div id="ddr-63d6033b05" class="ddr-page-widget ddr-page-widget__video ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <div class="ddr-widget__video" style="margin: 0px 0px 0px 75px; position: relative; left: 50%; transform: translateX(-50%);">
+                                        <div class="" style="padding-bottom: 56.25%; position: relative; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube.com/embed/6ZRM6T24uR0?list=PLTd6ceoshpremSFQxYM4L0p4Q6hR-4e4J&amp;t=4?" frameborder="0" allow="autoplay; loop; control; encrypted-media" allowfullscreen="" style="width: 100%; height: 100%; padding-right: 0px; padding-bottom: 0px; position: absolute;"></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-81646fb77d" style="width: 12.5%;">
+                            <div id="ddr-0ee26b928f" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; font-weight: 900; color: rgb(29, 206, 225); font-size: 66px; text-align: center;">4</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-d0cce37995" class="ddr-page-section-wrapper ddr-page-section-wrapper-9">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-9 ">
+                <div class="ddr-page-section ddr-page-section-9" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-fb621b1eb9">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-a3f4a19202" style="width: 100%;">
+                            <div id="ddr-617054b40c" class="ddr-page-widget ddr-page-widget__divider ddr-page-widget-0 ">
+                                <div class="ddr-widget " style="margin: 0px; padding: 0px; height: 70px; display: flex; place-content: space-between;">
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                    <div class="separatorIcon" style="color: rgb(195, 13, 41); top: 16px;"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-d9d8fcb61c" class="ddr-page-section-wrapper ddr-page-section-wrapper-10">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-10 ">
+                <div class="ddr-page-section ddr-page-section-10" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-396422f5cf">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-c332dc3e8e" style="width: 87.5%;">
+                            <div id="ddr-478f0ad90e" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; color: rgb(29, 206, 225);">Fith Course</h1>
+                                </div>
+                            </div>
+                            <div id="ddr-7b5b235843" class="ddr-page-widget ddr-page-widget__video ddr-page-widget-1 ">
+                                <div class="ddr-widget ">
+                                    <div class="ddr-widget__video" style="margin: 0px 0px 0px 75px; position: relative; left: 50%; transform: translateX(-50%);">
+                                        <div class="" style="padding-bottom: 56.25%; position: relative; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube.com/embed/EceKLMxzE_8?list=PLTd6ceoshpremSFQxYM4L0p4Q6hR-4e4J&amp;t=38?" frameborder="0" allow="autoplay; loop; control; encrypted-media" allowfullscreen="" style="width: 100%; height: 100%; padding-right: 0px; padding-bottom: 0px; position: absolute;"></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-f3cc304abd" style="width: 12.5%;">
+                            <div id="ddr-5a5199bb97" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; font-weight: 900; color: rgb(29, 206, 225); font-size: 66px; text-align: center;">5</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-178e0b34e9" class="ddr-page-section-wrapper ddr-page-section-wrapper-11">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-11 ">
+                <div class="ddr-page-section ddr-page-section-11" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-94747c5850">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-ab6cf1da73" style="width: 100%;">
+                            <div id="ddr-97b2ef6aa9" class="ddr-page-widget ddr-page-widget__divider ddr-page-widget-0 ">
+                                <div class="ddr-widget " style="margin: 0px; padding: 0px; height: 70px; display: flex; place-content: space-between;">
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                    <div class="separatorIcon" style="color: rgb(231, 14, 81); top: 16px;"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-1 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-d707dd4549">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-2b703359de" style="width: 100%;">
+                            <div id="ddr-d8640518aa" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; color: rgb(29, 206, 225);">Sixth Course</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-2 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-ff69028b81">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-f956040822" style="width: 87.5%;">
+                            <div id="ddr-b9a440acb6" class="ddr-page-widget ddr-page-widget__video ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <div class="ddr-widget__video" style="margin: 0px 0px 0px 75px; position: relative; left: 50%; transform: translateX(-50%);">
+                                        <div class="" style="padding-bottom: 56.25%; position: relative; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube.com/embed/wUeraOAfw9A?list=PLTd6ceoshpremSFQxYM4L0p4Q6hR-4e4J&amp;t=132?" frameborder="0" allow="autoplay; loop; control; encrypted-media" allowfullscreen="" style="width: 100%; height: 100%; padding-right: 0px; padding-bottom: 0px; position: absolute;"></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-2a95ff8335" style="width: 12.5%;">
+                            <div id="ddr-c54e26e0cc" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; font-weight: 900; color: rgb(29, 206, 225); font-size: 66px; text-align: center;">6</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-e41720f5dd" class="ddr-page-section-wrapper ddr-page-section-wrapper-12">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-12 ">
+                <div class="ddr-page-section ddr-page-section-12" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-43046d6bd1">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-502f0a5c63" style="width: 100%;">
+                            <div id="ddr-c068bdcdba" class="ddr-page-widget ddr-page-widget__divider ddr-page-widget-0 ">
+                                <div class="ddr-widget " style="margin: 0px; padding: 0px; height: 70px; display: flex; place-content: space-between;">
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                    <div class="separatorIcon" style="color: rgb(24, 208, 102); top: 16px;"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                </div>
+                            </div>
+                            <div id="ddr-8aeac45272" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-1 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; color: rgb(29, 206, 225);">Siventh Course</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-1 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-e7f652038e">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-db39a61938" style="width: 86.4583%;">
+                            <div id="ddr-9bab01c9d6" class="ddr-page-widget ddr-page-widget__video ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <div class="ddr-widget__video" style="margin: 0px 0px 0px 75px; position: relative; left: 50%; transform: translateX(-50%);">
+                                        <div class="" style="padding-bottom: 56.25%; position: relative; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube.com/embed/PB_3vwgGXGo?list=PLTd6ceoshpremSFQxYM4L0p4Q6hR-4e4J&amp;t=24?" frameborder="0" allow="autoplay; loop; control; encrypted-media" allowfullscreen="" style="width: 100%; height: 100%; padding-right: 0px; padding-bottom: 0px; position: absolute;"></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-f564cac307" style="width: 13.5417%;">
+                            <div id="ddr-ce1b129768" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; font-weight: 900; color: rgb(29, 206, 225); font-size: 66px; text-align: center;">7</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-71698362e5" class="ddr-page-section-wrapper ddr-page-section-wrapper-13">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-13 ">
+                <div class="ddr-page-section ddr-page-section-13" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-baf164bb8f">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-faf06386a8" style="width: 100%;">
+                            <div id="ddr-52d1793066" class="ddr-page-widget ddr-page-widget__divider ddr-page-widget-0 ">
+                                <div class="ddr-widget " style="margin: 0px; padding: 0px; height: 70px; display: flex; place-content: space-between;">
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                    <div class="separatorIcon" style="color: rgb(190, 46, 140); top: 16px;"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-1 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-5cd45cf991">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-dd9ba82ce4" style="width: 100%;">
+                            <div id="ddr-81c5a444b5" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; color: rgb(29, 206, 225);">Eight Course</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-23abc75539" class="ddr-page-section-wrapper ddr-page-section-wrapper-14">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-14 ">
+                <div class="ddr-page-section ddr-page-section-14" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-293f08ea9d">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-46512d3266" style="width: 86.4583%;">
+                            <div id="ddr-0e17ed5438" class="ddr-page-widget ddr-page-widget__video ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <div class="ddr-widget__video" style="margin: 0px 0px 0px 75px; position: relative; left: 50%; transform: translateX(-50%);">
+                                        <div class="" style="padding-bottom: 56.25%; position: relative; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube.com/embed/4R1vniYOP44?list=PLTd6ceoshpremSFQxYM4L0p4Q6hR-4e4J&amp;t=11?" frameborder="0" allow="autoplay; loop; control; encrypted-media" allowfullscreen="" style="width: 100%; height: 100%; padding-right: 0px; padding-bottom: 0px; position: absolute;"></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-7b50ad5ba0" style="width: 13.5417%;">
+                            <div id="ddr-c37f935977" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; font-weight: 900; color: rgb(29, 206, 225); font-size: 66px; text-align: center;">8</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-1cdd4eb062" class="ddr-page-section-wrapper ddr-page-section-wrapper-15">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-15 ">
+                <div class="ddr-page-section ddr-page-section-15" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-0df6f18589">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-93d7d77d0d" style="width: 100%;">
+                            <div id="ddr-28f10f04a5" class="ddr-page-widget ddr-page-widget__divider ddr-page-widget-0 ">
+                                <div class="ddr-widget " style="margin: 0px; padding: 0px; height: 70px; display: flex; place-content: space-between;">
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                    <div class="separatorIcon" style="color: rgb(28, 97, 178); top: 16px;"><i class="fa fa-heart" aria-hidden="true"></i></div>
+                                    <div class="separator" style="display: block; height: 1px; width: 45%; border-top-width: 1px; border-top-style: solid;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-1 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-723315881d">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-58fdee452a" style="width: 100%;">
+                            <div id="ddr-489f15df2a" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; color: rgb(29, 206, 225);">Nigth Course</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-49baa66828" class="ddr-page-section-wrapper ddr-page-section-wrapper-16">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-16 ">
+                <div class="ddr-page-section ddr-page-section-16" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-ee98da4466">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-74f3333869" style="width: 86.4583%;">
+                            <div id="ddr-2b9342d3c4" class="ddr-page-widget ddr-page-widget__video ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <div class="ddr-widget__video" style="margin: 0px 0px 0px 75px; position: relative; left: 50%; transform: translateX(-50%);">
+                                        <div class="" style="padding-bottom: 56.25%; position: relative; overflow: hidden; max-width: 100%;"><iframe src="https://www.youtube.com/embed/BRjDnqLXZPY?list=PLTd6ceoshpremSFQxYM4L0p4Q6hR-4e4J&amp;t=7?" frameborder="0" allow="autoplay; loop; control; encrypted-media" allowfullscreen="" style="width: 100%; height: 100%; padding-right: 0px; padding-bottom: 0px; position: absolute;"></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-5be4a9edbd" style="width: 13.5417%;">
+                            <div id="ddr-7853ed07c3" class="ddr-page-widget ddr-page-widget__headline ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <h1 class="ddr-widget__headline" style="margin: 15px; font-weight: 900; color: rgb(29, 206, 225); font-size: 66px; text-align: center;">9</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-7459fdb470" class="ddr-page-section-wrapper ddr-page-section-wrapper-17">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-17 ">
+                <div class="ddr-page-section ddr-page-section-17" style="display: flow-root;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768" id="ddr-a5799c9fdb">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " id="ddr-059928f95c" style="width: 100%;">
+                            <div id="ddr-550def5c9d" class="ddr-page-widget ddr-page-widget__icon ddr-page-widget-0 ">
+                                <div class="ddr-widget ">
+                                    <div class="ddr-widget__icon " style="justify-content: center;"><a target="_self" style="margin: 15px;"><i class="fa fa-check" style="font-size: 40px; color: rgb(20, 208, 157); font-family: FontAwesome;"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    <!--
+    (function() {
+        // STEPS
+        // generator step function
+        function popUpAction(el, contextData) {
+            let popUpcontextData = JSON.parse(el.getAttribute("datapopup"));
+
+            el.removeAttribute("href");
+            el.removeAttribute("target");
+
+            el.addEventListener('click', function(event) {
+                event.preventDefault;
+                window.open(contextData.href, "", "scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=0,height=0,left=-1000,top=-1000")
+            })
+            console.log(el)
+        }
+
+        // MAIN
+        //fetch all anchors with specific marker "datapopup"
+
+        var allAnchors = document.body.getElementsByTagName("a");
+
+        var popupAnchors = []
+        for (let i = 0; i < allAnchors.length; i++) {
+            let currentAnchor = allAnchors[i];
+            if (currentAnchor.hasAttribute("datapopup")) {
+                popupAnchors.push(currentAnchor)
+            }
+        }
+
+        //Aadd functionality to expected elements
+        for (let i = 0; i < popupAnchors.length; i++) {
+            console.log("Bla");
+            let currentAnchor = popupAnchors[i];
+
+            const contextData = JSON.parse(currentAnchor.getAttribute("datapopup"));
+            popUpAction(currentAnchor, contextData)
+        }
+
+
+    })()
+
+    //
+    -->
+</script>
+<script src="https://app.dragdropr.com/ddr-scripts/navigation.js">
+    <!--
+    //
+    -->
+</script>
+<script>
+    <!--
+    initiateBurgerMenu("4ae94f2fa3")
+    //
+    -->
+</script>
+<script type="text/javascript">
+    <!--
+    var urlMatch = document.location.href.match(/http.+dragdropr.com/);
+    if (urlMatch) {
+        var linksWithRefIDs = document.querySelectorAll('[data-link-ref-id]');
+        linksWithRefIDs.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                var linkTag = event.target.closest('a');
+                var linkTarget = linkTag.hasAttribute('target') ? link.getAttribute('target') : null;
+                var linkRefId = linkTag.getAttribute('data-link-ref-id');
+                var linkUrl = urlMatch[0] + '/page/' + linkRefId + '/preview';
+
+                if (linkTarget && linkTarget == 'new-tab') {
+                    window.open(linkUrl, linkTarget);
+                } else if (linkTarget !== 'popup') {
+                    window.location.href = linkUrl;
+                }
+            })
+        });
+    }
+
+    //
+    -->
+</script>
